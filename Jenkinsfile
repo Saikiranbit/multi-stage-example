@@ -8,13 +8,13 @@ pipeline {
 
     tools {
         maven 'Maven3'       // Configure Maven in Jenkins Global Tools
-        jdk 'Java21'          // Optional: If not using JDK inside container
+    
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/manikiran7/multi-stage-example.git', branch: 'master'
+                git url: 'https://github.com/Saikiranbit/multi-stage-example.git', branch: 'master'
             }
         }
 
